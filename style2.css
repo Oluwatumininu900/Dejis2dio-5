@@ -1,0 +1,348 @@
+body{
+    /* background-image: url("mation1_1.jpg");
+    background-size: cover; */
+background-color:rgb(187, 92, 187);
+}
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+} */
+
+/* Header styling */
+header {
+    background-image: url("Deji1.jpg");
+  background-size: cover;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo image styling */
+/* .logo {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+} */
+
+/* Main heading (Dejis2dio) */
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    margin-right: 15px;
+}
+
+/* Main content */
+main {
+    margin-top: 30px;
+}
+nav {
+    margin-top: 15px;
+    /* display: block;
+    align-items: left;
+    justify-content: left; */
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    text-align: center;
+    padding: 20px;
+    background-image: url("Deji1.jpg");
+  background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+}
+
+/* Animating the header */
+.banner h1 {
+    font-size: 2em;
+    animation: fadeIn 2s ease-out forwards;
+    opacity: 0;
+}
+
+/* Animating the tagline */
+.tagline {
+    font-size: 1.5em;
+    margin-top: 20px;
+    animation: slideIn 3s ease-out forwards;
+    opacity: 0;
+}
+
+/* Animating the services */
+.services {
+    font-size: 1.2em;
+    margin-top: 30px;
+    animation: fadeInUp 3.5s ease-out forwards;
+    opacity: 0;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.cen{
+    text-align: center;
+    color:black;
+}
+.menu {
+    width: 80%;
+    /* background-color: burlywood; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    /* max-width: 500px; */
+    border-radius: 25px;
+    /* margin-bottom: 20px; */
+    margin-bottom: 20px; /* Adds space between div1 and div2 */
+      padding: 10px;
+  }
+  img,video{
+    border-radius: 25px;
+  }
+  .hover-video {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.hover-video:hover {
+    transform: scale(1.1); /* Slightly enlarges the video on hover */
+}
+.copyright-container {
+    background-color: rgb(187, 92, 187);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright-container p {
+       margin: 5px 0;
+}
+
+a {
+    color: #ffcc00; /* Makes the email link stand out */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+#dimmed-video {
+    filter: brightness(0.8); /* Reduces brightness to 70% */
+    transition: filter 0.3s ease; /* Adds a smooth transition for hover effect */
+}
+p{
+    color:white;
+}
+.menu-1{
+    width: 80%;
+    /* background-color: burlywood; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    /* max-width: 500px; */
+    border-radius: 25px;
+    /* background-image: url("Deji1.jpg"); 
+  background-size: cover; */
+  /* margin-bottom: 20px; */
+  margin-top: 20px; /* Adds space between div1 and div2 */
+      padding: 10px;
+  }
+  /* @media (max-width: 768px) { */
+    /* Styles for tablets and smaller screens */
+  /* } */
+/*   
+  @media (max-width: 480px) { */
+    /* Styles for mobile phones */
+  /* } */
+  /*@media screen and (max-width:600px)
+    {
+    h1{font-size: 1.5em;
+        margin-right: 10px;
+    }
+        header {
+            padding: 10px;
+        } 
+        main {
+            margin-top: 15px;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        .navbar {
+            gap: 20px;
+        }
+        .navbar a {
+            font-weight: 300;
+            font-size: 1.0em;
+        }
+        .banner {
+            padding: 10px;
+            border-radius: 5px;
+            width: 50%;
+        }
+        .banner h1 {
+            font-size: 1em;
+        }
+        .tagline {
+            font-size: 1.0em;
+            margin-top: 10px;
+        }
+        .services {
+            font-size: 1.0em;
+            margin-top: 15px;
+        }
+        .menu {
+            width: 50%;
+            padding: 10px;
+            border-radius: 15px;
+            margin-bottom: 10px; 
+            padding: 5px;
+          }*/
+          /*img,video{
+            border-radius: 15px;
+          }
+          .menu-1{
+            width: 50%;
+            padding: 15px;
+            border-radius: 10px;
+              padding: 5px;
+          }
+    }*/
+    /* Default styles (for desktop and larger screens) */
+
+/* Media queries for tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Reduce h1 size for tablets */
+        margin-right: 10px;
+    }
+
+    .banner h1 {
+        font-size: 1.7em; /* Reduce banner h1 size */
+    }
+
+    .tagline {
+        font-size: 1.3em; /* Reduce tagline font size */
+    }
+
+    .services {
+        font-size: 1.1em; /* Slightly reduce services text size */
+    }
+
+    .menu, .menu-1 {
+        width: 70%; /* Adjust the width for tablets */
+    }
+}
+
+/* Media queries for phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Further reduce h1 size for phones */
+        margin-right: 5px;
+    }
+
+    .banner h1 {
+        font-size: 1.2em; /* Reduce banner h1 for small screens */
+    }
+
+    .tagline {
+        font-size: 1.1em; /* Adjust tagline font size */
+    }
+
+    .services {
+        font-size: 1em; /* Adjust services text size */
+    }
+
+    .menu, .menu-1 {
+        width: 90%; /* Expand width to make it full for small screens */
+    }
+
+    .banner {
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%; /* Ensure it fits the screen on mobile */
+    }
+    #video {
+        width: 100%; /* Make the video responsive and fill the available width */
+        max-width: 300px; /* Optional: set a maximum width to prevent it from becoming too large */
+    }
+    #dimmed-video {
+        width: 100%; /* Make the video responsive and fill the available width */
+        max-width: 300px; /* Optional: set a maximum width to prevent it from becoming too large */
+    }
+}
+
+  
